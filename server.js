@@ -1,10 +1,13 @@
+require('dotenv').config()
 const app = require('./src/app')
+require('./src/db/db')
+const songmodel = require('./src/models/song.model')
 
 
 
-app.get('/',(req,res)=>{
-    res.send('this is a home page')
-})
+
+
+
 
 
 app.listen(3000,()=>{
